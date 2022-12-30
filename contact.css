@@ -1,0 +1,62 @@
+body{
+  background-image: linear-gradient(to right, #f6e0b5,#a7644c, #f6e0b5);
+}
+.card {
+  box-shadow: 6px 6px 8px black;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  background-color: aliceblue;
+  margin-top: 50px;
+  border: 1px solid gray;
+}
+  
+.title {
+  color: grey;
+  font-size: 18px;
+}
+  
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+  
+.card a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+  
+button:hover, a:hover {
+  opacity: 0.7;
+}
+.navas{
+  margin-top: 10px;
+  display: flex;
+  margin-left: 40%;
+}
+.navas li{
+  margin-left: 15px;
+  float: right;
+  list-style-type: none;
+}
+.navas li a{
+  list-style: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1rem;
+    font-weight: 550;
+    display: block;
+    padding: 5px 35px;
+    color: black;
+    text-decoration: none;
+    filter: drop-shadow(6px 6px 5px gray);
+}

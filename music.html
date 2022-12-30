@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/music.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contain">
+        <ul class="nava">
+            <input type="search" placeholder="search song/artist/movie">
+            <li><a href="/contact.html">CONTACT</a></li>
+            <li><a href="/about.html">ABOUT</a></li>
+            <li><a href="music.html">MUSIC</a></li>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/login.html">LOGIN</a></li>
+        </ul>
+    </div>
+    <div class="music">
+        <img id="cd" src="/cd-removebg-preview.png" alt="">
+        <p class="love">music is love</p>
+        <div class="lin"></div>
+        <div class="right">
+            <button onclick="cs_change_music('/song.mp3');"><img src="/next.png" alt=""></button>
+            <img src="/pngtree-vector-play-icon-png-image_956416-removebg-preview.png" alt="" id="icon">
+            <button onclick="cs_change_music('/music1.mp3');"><img src="/png-transparent-button-media-music-next-player-song-ui-music-icon-removebg-preview.png" style="margin-left: 20px;" alt=""></button>
+        </div>
+        <audio id="mymus">
+            <source src="/music1.mp3">
+        </audio>
+    </div>
+    
+    <script>
+        var mysound = document.getElementById("mymus");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function() {
+            if (mymus.paused) {
+ 
+                mymus.play();
+                icon.src ="png-clipart-computer-icons-button-media-player-pause-button-rectangle-black-removebg-preview.png";
+            } else {
+ 
+                mymus.pause();
+                icon.src = "pngtree-vector-play-icon-png-image_956416-removebg-preview.png";
+            }
+        }
+
+        function cs_change_music(music)
+        {  
+        document.getElementById("mymus").pause();
+        document.getElementById("mymus").setAttribute('src', music);
+        document.getElementById("mymus").load();
+        document.getElementById("mymus").play();
+        }
+    </script>
+    <div class="suggestion">
+        <div class="line"></div>
+        <h1>Want To Listen More?</h1>
+        <h3>scroll down</h3>
+        <div class="line1"></div>
+    </div>
+    <div class="login">
+        <embed class="soundtrap" src="https://www.soundtrap.com/home/creator/projects" type="">
+    </div>
+    <div class="log">
+        <iframe class="utube" width="600" height="320" src="https://www.youtube.com/embed/0FNiZPrgfyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: 100vh;
+    background-image: url("/Untitled\ design\ \(15\).png");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 650px) {
+    .container {
+      width: 100%;
+      display: flex;
+    }
+}
+.nav input{
+    float: right;
+    list-style-type: none;
+    height: 50px;
+    padding: 5px 30px;
+    margin-top: 10px;
+    margin-right: 12px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 3px 3px 35px gray;
+}
+.nav li{
+    float: right;
+    list-style-type: none;
+}
+.nav a{
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1rem;
+    font-weight: 550;
+    display: block;
+    padding: 5px 35px;
+    color: black;
+    text-decoration: none;
+    filter: drop-shadow(6px 6px 5px gray);
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+.left-col {
+    margin-left: 11%;
+}
+.left-col h1 {
+    font-size: 50px;
+    color: rgb(94, 9, 26);
+    filter: drop-shadow(8px 8px 8px gray);
+}
+.right-col {
+    float: right;
+    margin-right: 10%;
+    margin-top: -5%;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(6px 6px 6px gray);
+}
+.right-col p {
+    font-size: 21px;
+    color: black;
+    font-weight: 650;
+    margin-right: 20px;
+}
+.right-col img{
+    height: 50px;
+    width: 50px;
+}
+#icon {
+    cursor: pointer;
+}

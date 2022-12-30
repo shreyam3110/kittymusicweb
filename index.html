@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <ul class="nav">
+            <input type="search" placeholder="search song/artist/movie">
+            <li><a href="/login.html">LOGIN</a></li>
+            <li><a href="/contact.html">CONTACT</a></li>
+            <li><a href="/about.html">ABOUT</a></li>
+            <li><a href="music.html">MUSIC</a></li>
+            <li><a href="/index.html">HOME</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="left-col">
+            <h1>KITTY <br> CAT 🐈</h1>
+        </div>
+        <div class="right-col">
+            <p>Click Here To Listen</p>
+            <img src="/pngtree-vector-play-icon-png-image_956416-removebg-preview.png" alt="" id="icon">
+        </div>
+    </div>
+    <audio id="mysound" >
+        <source src="song.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        var mysound = document.getElementById("mysound");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function() {
+            if (mysound.paused) {
+ 
+                mysound.play();
+                icon.src ="png-clipart-computer-icons-button-media-player-pause-button-rectangle-black-removebg-preview.png";
+            } else {
+ 
+                mysound.pause();
+                icon.src = "pngtree-vector-play-icon-png-image_956416-removebg-preview.png";
+            }
+        }
+    </script>
+</body>
+</html>

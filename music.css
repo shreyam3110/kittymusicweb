@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+.music{
+    background-image: url("/Untitled\ design\ \(16\).png");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.lin{
+    background-color: #000000;
+    width: 240px;
+    height: 4px;
+    margin-left: 72%;
+    margin-top: 10px;
+}
+#cd{
+    margin-left: 75%; 
+    height: 150px; 
+    width: 150px; 
+    margin-top: 150px;
+    filter: drop-shadow(6px 6px 6px rgb(68, 65, 65));
+    animation: round 5s linear infinite;
+}
+@keyframes round{
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(360deg); 
+    }
+}
+.right{
+    margin-left: 74.6%;
+    display: flex;
+    margin-top: 50px;
+    border: 1px black;
+    border-radius: 4px;
+    margin-top: 3px;
+}
+.right img{
+    margin-bottom: 10px;
+    margin-right: 20px;
+    height: 30px;
+    width: 30px;
+    filter: drop-shadow(6px 6px 6px rgb(68, 65, 65));
+}
+#icon{
+    cursor: pointer;
+    margin-left: 20px;
+    height: 25px;
+    width: 25px;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+.login{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.soundtrap{
+    height: 100vh;
+    width: 100%;
+    box-shadow: 3px 3px 3px gray;
+}
+.suggestion{
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    animation: movement 5s linear infinite;
+    overflow-x: hidden;
+}
+@keyframes movement{
+    0%{
+        background-color: burlywood;
+    }
+    50%{
+        background-color: lightsalmon;
+    }
+    100%{
+        background-color: lightyellow;
+    }
+}
+.line{
+    margin-top: 75px;
+    height: 3px;
+    width: 50%;
+    background-color: #000000;
+    animation: rightmove 3s linear infinite;
+}
+@keyframes rightmove{
+    100%{
+        transform: translateX(-50px);
+    }
+    50%{
+        transform: translateX(150px);
+    }
+    0%{
+        transform: translateX(-50px);
+    }
+}
+.line1{
+    height: 3px;
+    width: 50%;
+    margin-left: 50%;
+    background-color: rgb(68, 51, 51);
+    animation: leftmove 3s linear infinite;
+}
+@keyframes leftmove{
+    100%{
+        transform: translateX(50px);
+    }
+    50%{
+        transform: translateX(-150px);
+    }
+    0%{
+        transform: translateX(50px);
+    }
+}
+
+.suggestion h1{
+    margin-top: 20px;
+    text-align: center;
+}
+.suggestion h3{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.log{
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+    position: absolute;
+}
+.utube{
+    margin-top: 55px;
+    margin-left: 30%;
+    filter: drop-shadow(6px 6px 6px gray);
+}
+.nava input{
+    float: right;
+    list-style-type: none;
+    height: 50px;
+    padding: 5px 30px;
+    margin-top: 10px;
+    margin-right: 12px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 3px 3px 35px gray;
+}
+.nava li{
+    float: right;
+    list-style-type: none;
+}
+.nava a{
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1rem;
+    font-weight: 550;
+    display: block;
+    padding: 5px 35px;
+    color: black;
+    text-decoration: none;
+    filter: drop-shadow(6px 6px 5px gray);
+}
+.love{
+    margin-left: 72%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
